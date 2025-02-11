@@ -1,0 +1,230 @@
+{
+    "periodos": [
+        {"id": 1, "horarioInicio": "07:00", "horarioFim": "08:00", "idTurno": 1},
+        {"id": 2, "horarioInicio": "08:00", "horarioFim": "09:00", "idTurno": 1},
+        {"id": 3, "horarioInicio": "09:00", "horarioFim": "10:00", "idTurno": 1},
+        {"id": 4, "horarioInicio": "10:00", "horarioFim": "11:00", "idTurno": 1},
+        {"id": 5, "horarioInicio": "11:00", "horarioFim": "12:00", "idTurno": 1},
+        {"id": 6, "horarioInicio": "13:00", "horarioFim": "14:00", "idTurno": 2},
+        {"id": 7, "horarioInicio": "14:00", "horarioFim": "15:00", "idTurno": 2},
+        {"id": 8, "horarioInicio": "15:00", "horarioFim": "16:00", "idTurno": 2},
+        {"id": 9, "horarioInicio": "16:00", "horarioFim": "17:00", "idTurno": 2}
+    ],
+
+    "turnos": [
+        {"id": 1, "nome": "Manhã", "periodos": [1, 2, 3, 4, 5]},
+        {"id": 2, "nome": "Tarde", "periodos": [6, 7, 8, 9]},
+        {"id": 3, "nome": "Noite", "periodos": []}
+    ],
+
+    "diasDaSemana": [
+        {"id": 1, "nome": "Segunda-feira", "turnos": [1, 2]},
+        {"id": 2, "nome": "Terça-feira", "turnos": [1, 2]},
+        {"id": 3, "nome": "Quarta-feira", "turnos": [1, 2]},
+        {"id": 4, "nome": "Quinta-feira", "turnos": [1, 2]},
+        {"id": 5, "nome": "Sexta-feira", "turnos": [1, 2]}
+    ],
+
+    "periodosSemanais": [
+        {"id": 1, "idPeriodo": 1, "idDiaDaSemana": 1, "idTurno": 1},
+        {"id": 2, "idPeriodo": 2, "idDiaDaSemana": 1, "idTurno": 1},
+        {"id": 3, "idPeriodo": 3, "idDiaDaSemana": 1, "idTurno": 1},
+        {"id": 4, "idPeriodo": 4, "idDiaDaSemana": 1, "idTurno": 1},
+        {"id": 5, "idPeriodo": 5, "idDiaDaSemana": 1, "idTurno": 1},
+        {"id": 6, "idPeriodo": 6, "idDiaDaSemana": 1, "idTurno": 2},
+        {"id": 7, "idPeriodo": 7, "idDiaDaSemana": 1, "idTurno": 2},
+        {"id": 8, "idPeriodo": 8, "idDiaDaSemana": 1, "idTurno": 2},
+        {"id": 9, "idPeriodo": 9, "idDiaDaSemana": 1, "idTurno": 2},
+
+        {"id": 10, "idPeriodo": 1, "idDiaDaSemana": 2, "idTurno": 1},
+        {"id": 11, "idPeriodo": 2, "idDiaDaSemana": 2, "idTurno": 1},
+        {"id": 12, "idPeriodo": 3, "idDiaDaSemana": 2, "idTurno": 1},
+        {"id": 13, "idPeriodo": 4, "idDiaDaSemana": 2, "idTurno": 1},
+        {"id": 14, "idPeriodo": 5, "idDiaDaSemana": 2, "idTurno": 1},
+        {"id": 15, "idPeriodo": 6, "idDiaDaSemana": 2, "idTurno": 2},
+        {"id": 16, "idPeriodo": 7, "idDiaDaSemana": 2, "idTurno": 2},
+        {"id": 17, "idPeriodo": 8, "idDiaDaSemana": 2, "idTurno": 2},
+        {"id": 18, "idPeriodo": 9, "idDiaDaSemana": 2, "idTurno": 2},
+
+        {"id": 19, "idPeriodo": 1, "idDiaDaSemana": 3, "idTurno": 1},
+        {"id": 20, "idPeriodo": 2, "idDiaDaSemana": 3, "idTurno": 1},
+        {"id": 21, "idPeriodo": 3, "idDiaDaSemana": 3, "idTurno": 1},
+        {"id": 22, "idPeriodo": 4, "idDiaDaSemana": 3, "idTurno": 1},
+        {"id": 23, "idPeriodo": 5, "idDiaDaSemana": 3, "idTurno": 1},
+        {"id": 24, "idPeriodo": 6, "idDiaDaSemana": 3, "idTurno": 2},
+        {"id": 25, "idPeriodo": 7, "idDiaDaSemana": 3, "idTurno": 2},
+        {"id": 26, "idPeriodo": 8, "idDiaDaSemana": 3, "idTurno": 2},
+        {"id": 27, "idPeriodo": 9, "idDiaDaSemana": 3, "idTurno": 2},
+
+        {"id": 28, "idPeriodo": 1, "idDiaDaSemana": 4, "idTurno": 1},
+        {"id": 29, "idPeriodo": 2, "idDiaDaSemana": 4, "idTurno": 1},
+        {"id": 30, "idPeriodo": 3, "idDiaDaSemana": 4, "idTurno": 1},
+        {"id": 31, "idPeriodo": 4, "idDiaDaSemana": 4, "idTurno": 1},
+        {"id": 32, "idPeriodo": 5, "idDiaDaSemana": 4, "idTurno": 1},
+        {"id": 33, "idPeriodo": 6, "idDiaDaSemana": 4, "idTurno": 2},
+        {"id": 34, "idPeriodo": 7, "idDiaDaSemana": 4, "idTurno": 2},
+        {"id": 35, "idPeriodo": 8, "idDiaDaSemana": 4, "idTurno": 2},
+        {"id": 36, "idPeriodo": 9, "idDiaDaSemana": 4, "idTurno": 2},
+
+        {"id": 37, "idPeriodo": 1, "idDiaDaSemana": 5, "idTurno": 1},
+        {"id": 38, "idPeriodo": 2, "idDiaDaSemana": 5, "idTurno": 1},
+        {"id": 39, "idPeriodo": 3, "idDiaDaSemana": 5, "idTurno": 1},
+        {"id": 40, "idPeriodo": 4, "idDiaDaSemana": 5, "idTurno": 1},
+        {"id": 41, "idPeriodo": 5, "idDiaDaSemana": 5, "idTurno": 1},
+        {"id": 42, "idPeriodo": 6, "idDiaDaSemana": 5, "idTurno": 2},
+        {"id": 43, "idPeriodo": 7, "idDiaDaSemana": 5, "idTurno": 2},
+        {"id": 44, "idPeriodo": 8, "idDiaDaSemana": 5, "idTurno": 2},
+        {"id": 45, "idPeriodo": 9, "idDiaDaSemana": 5, "idTurno": 2}
+    ],
+
+    "professores": [
+        {"id": 1, "nome": "Giana"},
+        {"id": 2, "nome": "Denise"},
+        {"id": 3, "nome": "Elisandra"},
+        {"id": 4, "nome": "Leni"},
+        {"id": 5, "nome": "Bruno"},
+        {"id": 6, "nome": "Maria Eduarda"},
+        {"id": 7, "nome": "Regina"},
+        {"id": 8, "nome": "Tatiana"},
+        {"id": 9, "nome": "Ieda"},
+        {"id": 10, "nome": "Cledi"},
+        {"id": 11, "nome": "Taisa"},
+        {"id": 12, "nome": "Rosane"},
+        {"id": 13, "nome": "Sélvia"},
+        {"id": 14, "nome": "Édiga"},
+        {"id": 15, "nome": "Ana"},
+        {"id": 16, "nome": "Andreia"}
+    ],
+
+    "turmas": [
+        {"id": 1, "nome": "AEE Infantil"},
+        {"id": 2, "nome": "Estimulação Precoce (EP)"},
+        {"id": 3, "nome": "Alfabetização"},
+        {"id": 4, "nome": "Pré-Escola"},
+        {"id": 5, "nome": "EJA 1"},
+        {"id": 6, "nome": "EJA 2"},
+        {"id": 7, "nome": "Escolarização"},
+        {"id": 8, "nome": "EJA 3"},
+        {"id": 9, "nome": "AEE Anos Finais"}
+    ],
+
+    "recursos": [
+        {"id": 1, "nome": "Laboratório de Informática"},
+        {"id": 2, "nome": "Sala de Aula 1"},
+        {"id": 3, "nome": "Sala de Aula 2"},
+        {"id": 4, "nome": "Ginásio"}
+    ],
+
+    "atividades": [
+      {
+        "id": 1,
+        "nome": "Aula - EJA I - Taisa",
+        "cargaHoraria": 20,
+        "professores": [11],
+        "turmas": [5],
+        "recursos": [2],
+        "geminar": true,
+        "separar": false,
+        "cor" : "#BDAF9B80",
+        "idsPeriodoSemanalRestricao" : [6, 7, 8, 9, 15, 16, 17, 18, 24, 25, 26, 27, 33, 34, 35, 36, 42, 43, 44, 45]
+      },
+      {
+        "id": 2,
+        "nome": "Aula - EJA I - Taisa e Ana",
+        "cargaHoraria": 2,
+        "professores": [11, 14],
+        "turmas": [5],
+        "recursos": [2],
+        "geminar": true,
+        "separar": false,        
+        "cor" : "#65F38280",
+        "idsPeriodoSemanalRestricao" : []
+      },
+      {
+        "id": 3,
+        "nome": "Educação Física - EJA I e EJA 2 - Taisa",
+        "cargaHoraria": 2,
+        "professores": [11],
+        "turmas": [5, 6],
+        "recursos": [],
+        "geminar": true,
+        "separar": false,     
+        "cor" : "#C4B2BA80",
+        "idsPeriodoSemanalRestricao" : []
+      },
+
+      {
+        "id": 4,
+        "nome": "Aula AEE Infantil",
+        "cargaHoraria": 12,
+        "professores": [2],
+        "turmas": [1],
+        "recursos": [2],
+        "geminar": true,
+        "separar": false,
+        "cor" : "#A5A31E80",
+        "idsPeriodoSemanalRestricao" : []
+      },
+      {
+        "id": 5,
+        "nome": "Aula de Alfabetização",
+        "cargaHoraria": 16,
+        "professores": [4],
+        "turmas": [3],
+        "recursos": [3],
+        "geminar": true,
+        "separar": false,
+        "cor" : "#EE176980",
+        "idsPeriodoSemanalRestricao" : []
+      },
+      {
+        "id": 6,
+        "nome": "Aula - EJA II",
+        "cargaHoraria": 16,
+        "professores": [11, 14],
+        "turmas": [5],
+        "recursos": [3],
+        "geminar": true,
+        "separar": false,
+        "cor" : "#B58BB880",
+        "idsPeriodoSemanalRestricao" : []
+      },
+      {
+        "id": 7,
+        "nome": "Aula - EJA III - Oficina",
+        "cargaHoraria": 12,
+        "professores": [10],
+        "turmas": [8],
+        "recursos": [3],
+        "geminar": true,
+        "separar": false,
+        "cor" : "#C1745E80",
+        "idsPeriodoSemanalRestricao" : []
+      },
+      {
+        "id": 8,
+        "nome": "Aula - AEE Anos Finais - Andreia",
+        "cargaHoraria": 20,
+        "professores": [16],
+        "turmas": [9],
+        "recursos": [],
+        "geminar": true,
+        "separar": false,
+        "cor" : "#A6A2AF80",
+        "idsPeriodoSemanalRestricao" : []
+      },
+      {
+        "id": 9,
+        "nome": "Aula - Escolarização - Rosane",
+        "cargaHoraria": 20,
+        "professores": [12],
+        "turmas": [7],
+        "recursos": [],
+        "geminar": true,
+        "separar": false,
+        "cor" : "#FCD05180",
+        "idsPeriodoSemanalRestricao" : []
+      }
+    ]
+  }
+  
