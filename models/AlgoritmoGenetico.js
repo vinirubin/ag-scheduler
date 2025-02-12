@@ -29,7 +29,7 @@ class AlgoritmoGenetico {
      * o melhor indivíduo geral, o melhor indivíduo da geração atual e a população inicial.
      * 
      * @constructor
-     */
+     */ 
     constructor() {
         this.turmas = []; // {Array} Lista de turmas disponíveis.
         this.professores = []; // {Array} Lista de professores disponíveis.
@@ -340,7 +340,7 @@ class AlgoritmoGenetico {
             }
         }
 
-        this.salvaHTML(this.MelhorIndividuoGeral, '../output/MelhorSolucao.html');
+        this.salvaHTML(this.MelhorIndividuoGeral, '../output/solucao.html');
     }
 
     /**
