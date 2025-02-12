@@ -1,94 +1,146 @@
-# Algoritmo genético - Grade de Horários escolar
+# Algoritmo Genético para Geração de Grade de Horários Escolar
 
-Nesse repositório, foi desenvolvido um Algoritmo genético para gerar uma grade de horários para uma instituição de ensino. 
+Este repositório implementa um **Algoritmo Genético (AG)** com o objetivo de gerar uma grade de horários para uma instituição de ensino, otimizando a alocação de aulas, professores, turmas e demais recursos, de forma a atender as restrições e maximizar a eficiência do uso dos espaços e tempos disponíveis.
 
-## Entendendo o problema
+---
 
-## Sobre o Código Fonte
+## Sumário
 
-### Arquivos
+- [Introdução](#introdução)
+- [Entendendo o Problema](#entendendo-o-problema)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+  - [Arquivos Principais](#arquivos-principais)
+  - [Diretórios Importantes](#diretórios-importantes)
+- [Como Executar o Projeto](#como-executar-o-projeto)
+- [Metodologias Utilizadas no AG](#metodologias-utilizadas-no-ag)
+- [Considerações Finais](#considerações-finais)
 
-Abaixo será apresentado a estrutura de arquivo desenvolvida e qual é o propósito de cada um.
+---
 
-#### index.js
+## Introdução
 
-Arquivo responsável por iniciar o Algoritmo genético.
+A criação de uma grade de horários escolar é um problema de escalonamento que envolve diversas variáveis e restrições. Este projeto utiliza um Algoritmo Genético para simular processos evolutivos e encontrar soluções viáveis e otimizadas para a distribuição de aulas, respeitando as demandas de professores, turmas e recursos.
 
-#### package.json e package-lock.json
+---
 
-Arquivos de controle do node.js. Apresentam as configurações e pacotes necessários para rodas o projeto.
+## Entendendo o Problema
 
-#### models/AlgoritmoGenetico.js
+O desafio principal é combinar de forma eficiente as diversas variáveis (aulas, professores, turmas, períodos e recursos) dentro de um conjunto limitado de horários e espaços, garantindo que as restrições institucionais e operacionais sejam respeitadas.
 
-Arquivo que possui a implementação da classe AlgoritmoGenetico.
+---
 
-#### models/Atividade.js
+## Estrutura do Projeto
 
-Arquivo que possui a implementação da classe Atividade.
+A seguir, detalha-se a estrutura de arquivos e o papel de cada componente:
 
-#### models/Aula.js
+### Arquivos Principais
 
-Arquivo que possui a implementação da classe Aula.
+- **index.js**  
+  Responsável por iniciar a execução do Algoritmo Genético.
 
-#### models/DiaDaSemana.js
+- **package.json** e **package-lock.json**  
+  Arquivos de configuração do Node.js, definindo as dependências e scripts necessários para o funcionamento do projeto.
 
-Arquivo que possui a implementação da classe DiaDaSemana.
+### Diretórios Importantes
 
-#### models/Individuo.js
+#### Diretório `models/`
 
-Arquivo que possui a implementação da classe Individuo.
+Contém as implementações das classes fundamentais do AG:
 
-#### models/Periodo.js
+- **AlgoritmoGenetico.js**  
+  Implementa a lógica central do algoritmo, gerenciando a evolução da população de soluções.
 
-Arquivo que possui a implementação da classe Periodo.
+- **Atividade.js**  
+  Define a estrutura e as propriedades das atividades que compõem as aulas.
 
-#### models/PeriodoSemanal.js
+- **Aula.js**  
+  Modela as aulas, considerando suas características e restrições específicas.
 
-Arquivo que possui a implementação da classe PeriodoSemanal.
+- **DiaDaSemana.js**  
+  Gerencia a representação dos dias da semana na grade de horários.
 
-#### models/Professor.js
+- **Individuo.js**  
+  Representa uma solução individual no contexto do AG, contendo os dados referentes à alocação de aulas e recursos.
 
-Arquivo que possui a implementação da classe Professor.
+- **Periodo.js**  
+  Define os períodos disponíveis para a alocação das aulas.
 
-#### models/Recurso.js
+- **PeriodoSemanal.js**  
+  Organiza os períodos de tempo distribuídos ao longo da semana.
 
-Arquivo que possui a implementação da classe Recurso.
+- **Professor.js**  
+  Modela os professores, incluindo suas disponibilidades e qualificações.
 
-#### models/Turma.js
+- **Recurso.js**  
+  Define os recursos (salas, equipamentos, etc.) necessários para a realização das atividades.
 
-Arquivo que possui a implementação da classe Turma.
+- **Turma.js**  
+  Representa as turmas, ligando as aulas e os professores de forma coerente.
 
-#### models/Turno.js
+- **Turno.js**  
+  Modela os turnos (manhã, tarde, noite) disponíveis para a organização das aulas.
 
-Arquivo que possui a implementação da classe Turno.
+#### Diretório `input/`
 
-#### input/dados.js
+- **dados.js**  
+  Arquivo que contém os dados de entrada essenciais para o funcionamento do AG, como informações sobre professores, turmas, aulas e recursos.
 
-Arquivo que possui os dados de entrada para que o AG possa rodar.
+#### Diretório `output/`
 
-#### output/
+- Pasta destinada ao salvamento do arquivo HTML que apresenta a melhor solução encontrada pelo AG, permitindo uma visualização clara e intuitiva da grade de horários gerada.
 
-Pasta onde será salvo o arquivo html contendo a melhor solução encontrada pelo AG.
+---
 
-## Como executar o AG
+## Como Executar o Projeto
 
-O único pré requisito é possuir o node.js e o npm instalados.
+Para executar o projeto, é necessário ter o Node.js e o npm instalados. Siga os passos abaixo:
 
-executar npm i
-executar npm start 
+1. **Instalar as dependências:**  
+   Execute no terminal:
+   ```bash
+   npm install
+   ```
+
+2. **Iniciar a aplicação:**  
+   Execute no terminal:
+   ```bash
+   npm start
+   ``` 
+
+O projeto será iniciado e, ao final do processo, o melhor resultado obtido será salvo na pasta output/ em formato HTML.
 
 ## Metodologias Utilizadas no AG
 
-### Individuo
+O algoritmo implementa diversas metodologias e técnicas para simular o processo evolutivo:
 
-### Torneio
+### 1. Representação do Indivíduo
 
-### Cruzamento
+Cada **Indivíduo** representa uma possível solução para a grade de horários. A codificação dos indivíduos foi desenvolvida para facilitar as operações de cruzamento e mutação.
 
-### Mutação
+### 2. Seleção por Torneio
 
-### Evolução
+A **seleção por torneio** é utilizada para escolher os indivíduos que participarão da reprodução. Neste método, grupos de indivíduos competem, e os melhores são selecionados para gerar a próxima geração.
 
-### Apresentação dos Dados
+### 3. Cruzamento
 
-### Parâmetros Utilizados
+O **cruzamento** combina as informações de dois indivíduos, gerando novos indivíduos que podem herdar as melhores características dos pais, contribuindo para a melhoria das soluções.
+
+### 4. Mutação
+
+A **mutação** introduz variações aleatórias nos indivíduos. Essa etapa é crucial para explorar novas soluções e evitar que o algoritmo fique preso em ótimos locais.
+
+### 5. Processo de Evolução
+
+O processo de **evolução** envolve múltiplas iterações, onde os indivíduos são avaliados e aprimorados através das operações de seleção, cruzamento e mutação até que se atinja um critério de parada (como número máximo de gerações ou solução satisfatória).
+
+### 6. Apresentação dos Dados
+
+Ao final do processo evolutivo, a melhor solução encontrada é gerada em um arquivo HTML, facilitando a análise e interpretação da grade de horários.
+
+### 7. Parâmetros Utilizados
+
+Os parâmetros do AG – como tamanho da população, taxa de mutação, taxa de cruzamento e número de gerações – estão definidos no código e podem ser ajustados para otimização dos resultados, conforme as necessidades específicas do problema.
+
+## Considerações Finais
+
+Este projeto demonstra a aplicabilidade dos Algoritmos Genéticos em problemas de escalonamento, especialmente na geração de grades de horários escolares. A modularidade do código e a clareza na definição das etapas do AG possibilitam futuras adaptações e melhorias, além de servir como base para estudos e implementações em contextos similares.
